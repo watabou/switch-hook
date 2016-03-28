@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="Switch Hook" package="com.watabou.switchhook" version="1.0.4" company="Retronic Games" />
+	<app main="com.watabou.switchhook.SwitchHook" path="Export" file="SwitchHook" />
+
+	<!-- Hardware -->
+	<window hardware="true" allow-shaders="true" require-shaders="false" depth-buffer="false" stencil-buffer="false"/>
+	<!-- Stage -->
+	<window background="0x000000" fps="60"/>
+	<window width="900" height="600" resizable="true" borderless="false" vsync="false" fullscreen="false" if="desktop" />
+	<window width="0" height="0" fullscreen="true" if="mobile" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	<haxelib name="msignal" />
+
+	<assets path="Assets">
+		<image path="font.png" id="font" />
+		<image path="font25x.png" id="font_small" />
+		<image path="font3x.png" id="font_normal" />
+
+		<image path="sound.png" id="sound" />
+		<image path="fullscreen.png" id="fullscreen" />
+		<image path="health.png" id="health" />
+		<image path="logo.png" id="logo" />
+		<image path="victory.png" id="victory" />
+
+		<image path="tiles0.png" id="tiles0" />
+		<image path="tiles1.png" id="tiles1" />
+		<image path="tiles2.png" id="tiles2" />
+		<image path="tiles3.png" id="tiles3" />
+		<image path="attack.png" id="attack" />
+
+		<image path="amulet.png" id="amulet" />
+		<image path="exit.png" id="exit" />
+		<image path="key.png" id="key" />
+		<image path="locked_exit.png" id="locked" />
+		<image path="shard.png" id="shard" />
+		<image path="tombstone.png" id="tombstone" />
+
+		<image path="hero.png" id="hero" />
+		<image path="hero_attack.png" id="hero_attack" />
+		<image path="statue.png" id="statue" />
+		<image path="undead.png" id="undead" />
+		<image path="undead_attack.png" id="undead_attack" />
+		<image path="wolf.png" id="wolf" />
+		<image path="wolf_attack.png" id="wolf_attack" />
+		<image path="treant.png" id="treant" />
+		<image path="treant_attack.png" id="treant_attack" />
+		<image path="bomb.png" id="bomb" />
+		<image path="armor.png" id="armor" />
+		<image path="armor_attack.png" id="armor_attack" />
+		<image path="toad.png" id="toad" />
+		<image path="toad_attack.png" id="toad_attack" />
+		<image path="cupid.png" id="cupid" />
+		<image path="cupid_attack.png" id="cupid_attack" />
+
+		<image path="blood.png" id="blood" />
+		<image path="arrow.png" id="arrow" />
+		<image path="chain.png" id="chain" />
+		<image path="grapple.png" id="grapple" />
+	</assets>
+	<assets path="Assets">
+		<sound path="step.wav" id="step" />
+		<sound path="death.wav" id="death" />
+		<sound path="explosion.wav" id="explosion" />
+		<sound path="hit_melee.wav" id="melee" />
+		<sound path="hit_ranged.wav" id="ranged" />
+		<sound path="bow.wav" id="shoot" />
+		<sound path="shoot.wav" id="hook" />
+		<sound path="level.wav" id="teleport" />
+		<sound path="unlock.wav" id="unlock" />
+		<sound path="click.wav" id="click" />
+	</assets>
+	<assets path="Assets" unless="flash">
+		<sound path="victory.ogg" id="win"/>
+		<sound path="shard.ogg" id="heal" />
+		<sound path="pull.ogg" id="pull" />
+	</assets>
+	<assets path="Assets" if="flash">
+		<sound path="victory.mp3" id="win"/>
+		<sound path="shard.mp3" id="heal" />
+		<sound path="pull.mp3" id="pull" />
+	</assets>
+
+	<icon path="Raw/icon256.png" size="256" />
+	<icon path="Raw/icon128.png" size="128" />
+	<icon path="Raw/icon64.png" size="64" />
+	<icon path="Raw/icon32.png" size="32" />
+	<icon path="Raw/icon16.png" size="16" />
+	
+</project>
