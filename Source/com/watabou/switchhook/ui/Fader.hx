@@ -35,8 +35,8 @@ class Fader extends View {
 		block.width = rWidth;
 		block.height = rHeight;
 
-		fscreen.x = rWidth - sound.width - 4;
-		fscreen.y = rHeight - sound.height - 4;
+		fscreen.x = rWidth - fscreen.width - 4;
+		fscreen.y = rHeight - fscreen.height - 4;
 
 		sound.x = fscreen.x - sound.width - 8;
 		sound.y = fscreen.y;
