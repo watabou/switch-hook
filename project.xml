@@ -85,10 +85,10 @@
 		<sound path="pull.mp3" id="pull" />
 	</assets>
 
-	<icon path="Raw/icon256.png" size="256" />
-	<icon path="Raw/icon128.png" size="128" />
-	<icon path="Raw/icon64.png" size="64" />
-	<icon path="Raw/icon32.png" size="32" />
-	<icon path="Raw/icon16.png" size="16" />
+	<icon path="Assets/icon256.png" size="256" />
+	<icon path="Assets/icon128.png" size="128" />
+	<icon path="Assets/icon64.png" size="64" />
+	<icon path="Assets/icon32.png" size="32" />
+	<icon path="Assets/icon16.png" size="16" />
 	
 </project>
